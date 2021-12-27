@@ -1,5 +1,5 @@
 {
-  "name": "china",
+  "name": "prengi",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chaplinskaya/china.git"
+    "url": "git+https://github.com/Chaplinskaya/prengi.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Chaplinskaya/china/issues"
+    "url": "https://github.com/Chaplinskaya/prengi/issues"
   },
-  "homepage": "https://github.com/Chaplinskaya/china#readme",
+  "homepage": "https://github.com/Chaplinskaya/prengi#readme",
   "dependencies": {
     "animate.css": "^4.1.1"
   },

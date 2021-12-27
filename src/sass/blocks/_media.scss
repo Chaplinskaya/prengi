@@ -1,0 +1,123 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+    .header {
+        &__container {
+            &_item {
+                margin-right: 10px;
+                &-block {
+                    font-size: 10px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+    .header {
+        display: none;
+        &__container {
+            display: none;
+        }
+    }
+    .promo {
+        background: url("../images/promo-phone.jpg") 30% / cover no-repeat;
+        &__menu {
+            position: relative;
+            &_block {
+                flex-direction: column;
+                justify-content: center;
+                width: 300px;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                z-index: 1000;
+                left: -300px;
+                background: #404047;
+                transition: 0.6s all;
+                &_active {
+                    left: 0;
+                    transition: 0.6s all;
+                }
+                &-item {
+                    height: 30px; 
+                    padding-bottom: 20px;
+                }
+                &-link {
+                    font-size: 22px;
+                }
+            }
+        }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            z-index: 1000;
+            right: 0px;
+            &_active {
+                span {
+                    &:nth-child(1) {
+                        transform: translateY(12px) rotate(-45deg);
+                        transition: 0.6s all;
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(-5px) rotate(45deg);
+                        transition: 0.6s all;
+                    }
+                }
+            }
+            span {
+                width: 25px;
+                height: 3px;
+                background: #fff;
+                display: block;
+                transition: 0.6s all;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .container {
+        width: 300px;
+    }
+    .promo {
+        &__menu {
+            height: 100px;
+            &_logo {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+        &__title {
+            width: 100%;
+            font-size: 34px;
+            font-family: 'Roboto Bold';
+            text-align: center;
+        }
+        &__subtitle {
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+        }
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+}

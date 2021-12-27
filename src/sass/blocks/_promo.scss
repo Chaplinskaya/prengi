@@ -1,0 +1,63 @@
+.promo {
+    background: url("../images/promo-phone.jpg") 55% / cover no-repeat;
+    color: #fff;
+    min-height: 700px;
+    &__menu {
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &_logo {
+            width: 150px;
+        }
+        img {
+            max-width: 100%;
+        }
+        &_block {
+            display: flex;
+            &-item {
+                list-style-type: none;
+            }
+            &-link {
+                text-decoration: none;
+                padding-left: 40px;
+                text-transform: uppercase;
+                font-family: 'Roboto Light';
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+    }
+    &__title {
+        font-size: 42px;
+        font-family: 'Roboto Black';
+        padding-top: 130px;
+        width: 530px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        font-family: 'Roboto Light';
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 500px;
+        span {
+            font-family: 'Roboto Bold';
+        }
+    }
+    &__btn {
+        width: 240px;
+        height: 60px;
+        display: block;
+        margin-bottom: 70px;
+        background-color: $main-color;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        border-radius: 7px;
+    }
+    .hamburger {
+        display: none;
+    }
+}

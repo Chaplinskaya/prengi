@@ -1,0 +1,17 @@
+@import 'libs/font';
+
+@import 'base/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+
+@import 'blocks/media';
