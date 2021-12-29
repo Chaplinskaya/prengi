@@ -1,7 +1,22 @@
+.swiper {
+    width: 100%;
+    z-index: -10000;
+}
+.swiper-wrapper {
+    z-index: -10000;
+}
+.promo:nth-child(even) {
+    background: url("../images/promo-phone.jpg") 45% / cover no-repeat;
+}
+.promo:nth-child(odd) {
+    background: url("../images/ofice.jpeg") 55% / cover no-repeat;
+}
 .promo {
-    background: url("../images/promo-phone.jpg") 55% / cover no-repeat;
     color: #fff;
     min-height: 700px;
+    width: 100%;
+    transition: 0.6s all;
+    z-index: 10000;
     &__menu {
         height: 130px;
         display: flex;
