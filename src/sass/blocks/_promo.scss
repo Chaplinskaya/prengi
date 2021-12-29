@@ -1,8 +1,50 @@
+.promo-section {
+    position: relative;
+    .container {
+        position: relative;
+    }
+    &__menu {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        &_logo {
+            padding-left: 0;
+            padding-top: 0;
+        }
+        &_block {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            z-index: 1000;
+            transition: 0.6s all;
+            &-item {
+                height: 30px; 
+                list-style-type: none;
+            }
+            &-link {
+                font-size: 22px;
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: 'Roboto Regular';
+                padding-left: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}   
 .swiper {
     width: 100%;
     z-index: -10000;
 }
 .swiper-wrapper {
+    z-index: -10000;
+}
+.swiper-slide {
     z-index: -10000;
 }
 .promo:nth-child(even) {
@@ -14,15 +56,15 @@
 .promo {
     color: #fff;
     min-height: 700px;
-    width: 100%;
     transition: 0.6s all;
-    z-index: 10000;
     &__menu {
         height: 130px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        z-index: 10000000;
         &_logo {
             width: 150px;
         }
@@ -47,7 +89,7 @@
     &__title {
         font-size: 42px;
         font-family: 'Roboto Black';
-        padding-top: 130px;
+        padding-top: 200px;
         width: 530px;
     }
     &__subtitle {
@@ -72,6 +114,8 @@
         font-size: 16px;
         border-radius: 7px;
     }
+}
+.promo-section {
     .hamburger {
         display: none;
     }

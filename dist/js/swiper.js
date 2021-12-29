@@ -1,5 +1,4 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     loop: true,
     speed: 400,
     initialSlide: 0,
@@ -12,11 +11,8 @@ const swiper = new Swiper('.swiper', {
         delay: 4000,
       },
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     }
   
-   
-    
   });

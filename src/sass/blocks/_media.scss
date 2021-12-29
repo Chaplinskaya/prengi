@@ -18,6 +18,9 @@
     .container {
         width: 700px;
     }
+    .promo-section__menu_block-link {
+        font-size: 16px;
+    }
 }
 @media (max-width: 768px) {
     .container {
@@ -29,34 +32,9 @@
             display: none;
         }
     }
-    .promo {
-        background: url("../images/promo-phone.jpg") 30% / cover no-repeat;
-        &__menu {
-            position: relative;
-            &_block {
-                flex-direction: column;
-                justify-content: center;
-                width: 300px;
-                height: 100vh;
-                position: fixed;
-                top: 0;
-                bottom: 0;
-                z-index: 1000;
-                left: -300px;
-                background: #404047;
-                transition: 0.6s all;
-                &_active {
-                    left: 0;
-                    transition: 0.6s all;
-                }
-                &-item {
-                    height: 30px; 
-                    padding-bottom: 20px;
-                }
-                &-link {
-                    font-size: 22px;
-                }
-            }
+    .promo-section {
+        .container {
+            position: initial;
         }
         .hamburger {
             display: flex;
@@ -65,8 +43,9 @@
             position: absolute;
             width: 30px;
             height: 20px;
-            z-index: 10000;
-            right: 0px;
+            z-index: 100000;
+            right: 20px;
+            top: 40px;
             cursor: pointer;
             &_active {
                 span {
@@ -89,7 +68,67 @@
                 background: #fff;
                 display: block;
                 transition: 0.6s all;
+                position: relative;
                 z-index: 10000;
+            }
+        }
+        &__menu {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            z-index: 10000;
+            left: 0;
+            &_logo {
+                padding-left: 15px;
+                padding-top: 10px;
+                img {
+                    width: 80%;
+                }
+            }
+            &_block {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 300px;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                z-index: 1000;
+                left: -300px;
+                background: #404047;
+                transition: 0.6s all;
+                &_active {
+                    left: 0;
+                    transition: 0.6s all;
+                }
+                &-item {
+                    height: 30px; 
+                    padding-bottom: 20px;
+                    
+                }
+                &-link {
+                    font-size: 22px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-family: 'Roboto Regular';
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    .promo {
+        background: url("../images/promo-phone.jpg") 30% / cover no-repeat;
+        position: relative;
+        &__menu {
+            &_logo {
+                display: none;
+            }
+            &_block {
+                display: none;
             }
         }
     }
@@ -112,7 +151,7 @@
             font-size: 34px;
             font-family: 'Roboto Bold';
             text-align: center;
-            padding-top: 100px;
+            padding-top: 150px;
         }
         &__subtitle {
             width: 100%;
