@@ -1,0 +1,42 @@
+.feature {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-family: 'Roboto Light';
+        font-size: 18px;
+        padding-bottom: 45px;
+        &-item {
+            width: 360px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-text {
+                padding: 0 30px;
+                text-align: center;
+            }
+        }
+    }
+    .last {
+        font-family: 'Roboto Bold';
+    }
+    &__title {
+        text-align: center;
+        font-family: 'Roboto Bold';
+        font-size: 48px;
+    }
+    &__arrows {
+        width: 175px;
+        height: 85px;
+        margin: 20px auto;
+        
+    }
+}
