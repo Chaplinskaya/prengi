@@ -6,12 +6,13 @@
         margin: 0 auto;
     }
     &__title {
-        color: #000;
+        color: #fff;
+        padding-bottom: 20px;
     }
     &__tab {
         position: relative;
         &_img {
-            margin-top: 70px;
+            margin-top: 90px;
             img {
                 width: 100%;
             }
