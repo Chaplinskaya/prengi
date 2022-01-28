@@ -27,11 +27,16 @@
         opacity: 0.8;
     }
 }
-
+.title {
+    font-family: 'Roboto Black';
+    font-size: 30px;
+    text-align: center;
+}
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/feature';
 @import 'blocks/access';
 @import 'blocks/modal';
+@import 'blocks/solution';
 
 @import 'blocks/media';
