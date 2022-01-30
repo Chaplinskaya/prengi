@@ -154,7 +154,7 @@ window.addEventListener('DOMContentLoaded', () => {
         list-style-type: none;
         justify-content: space-between;
         margin: 0 auto;
-        width: 845px;
+        max-width: 845px;
         border: 1px solid #fff;
         border-radius: 3px;
         top: 0;
@@ -162,6 +162,12 @@ window.addEventListener('DOMContentLoaded', () => {
         left: 0;
         z-index: 15;
     `;
+    const mQuery = window.matchMedia('(max-width: 768px)');
+    if (mQuery.matches) { 
+        indicators.style.cssText = `
+            display: none;
+    `;
+    }
     sliderBlock.append(indicators);
     
     const buttons = ['Prengi Prodaction', 'Prengi FMC', 'Prengi Mallz Retail', 'Prengi Logistic', 'Prengi IT', 'Prengi HR'];

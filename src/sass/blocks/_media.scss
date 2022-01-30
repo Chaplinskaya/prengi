@@ -26,6 +26,9 @@
     .container {
         width: 500px;
     }
+    .title {
+        font-size: 26px;
+        }
     .header {
         display: none;
         &__container {
@@ -135,6 +138,13 @@
     .feature__block {
         flex-direction: column;
         align-items: center;
+    }
+    .solution {
+        &__tab {
+            &_img {
+                margin-top: 20px;
+            }
+        }
     }
 }
 @media (max-width: 575px) {
